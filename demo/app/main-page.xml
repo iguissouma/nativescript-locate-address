@@ -1,0 +1,10 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <ScrollView>
+    <StackLayout padding="25">
+      <Image width="256" height="256" src="~/res/locate-address.png" />
+      <Button text="is maps app available?" tap="{{ doCheckAvailable }}" class="button button-a"/>
+      <Button text="go to address" tap="{{ doAddress }}" class="button" />
+      <Label text="{{ address }}" textWrap="true"/>
+    </StackLayout>
+  </ScrollView>
+</Page>

@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "removeComments": true,
+        "experimentalDecorators": true,
+        "noEmitHelpers": true,
+        "noEmitOnError": true,
+        "declaration": true,
+        "noLib": true
+    },
+    "files": [
+        "node_modules/typescript/lib/lib.core.d.ts",
+        "manual_typings/base.d.ts",
+        "node_modules/tns-core-modules/tns-core-modules.d.ts",
+        "node_modules/tns-platform-declarations/android/android17.d.ts",
+        "node_modules/tns-platform-declarations/android/org.nativescript.widgets.d.ts",
+        "node_modules/tns-platform-declarations/ios/ios.d.ts",
+        "locate-address.common.ts",
+        "locate-address.android.ts",
+        "locate-address.ios.ts"
+    ],
+    "compileOnSave": false
+}
