@@ -80,5 +80,35 @@ locator.locate({
 });
 ```
 
+You can use `lat` and `lng` to locate address.
+
+##### JavaScript
+```js
+locator.locate({
+    lat : 48.8858671,
+    lng : 2.2188144
+}).then(
+  function() {
+    console.log("Maps app launched.");
+  },
+  function(error) {
+    console.log(error);
+  },
+);
+```
+
+##### TypeScript
+```js
+locator.locate({
+    lat : 48.8858671,
+    lng : 2.2188144
+}).then(() => {
+    console.log("Maps app launched.");
+}, (error) => {
+    console.log(error);
+});
+```
+
+
 ## Future work
-* Use `lat` and `lng` to locate address if no Address specified.
+* Nothing.
