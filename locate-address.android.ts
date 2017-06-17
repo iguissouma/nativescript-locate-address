@@ -38,11 +38,11 @@ export class LocateAddress {
 
             if (options.address) {
                 addr = options.address;
-            } /*else if (options.lat && options.lng) {
+            } else if (options.lat && options.lng) {
                 addr = options.lat + "," + options.lng;
-            }*/
+            }
 
-            let url = "geo:0,0?q=" + encodeURIComponent(addr);
+            let url = "geo:0,0?q=" + (options.address? encodeURIComponent(addr) : addr);
 
             let intent = new android.content.Intent(
                 android.content.Intent.ACTION_VIEW,

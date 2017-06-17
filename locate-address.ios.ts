@@ -17,12 +17,12 @@ export class LocateAddress {
 
       if (options.address) {
         addr = options.address;
-      } /*else if (options.lat && options.lng) {
-       addr = options.lat + "," + options.lng;
-       }*/
+      } else if (options.lat && options.lng) {
+        addr = options.lat + "," + options.lng;
+      }
 
       //utils.openUrl("http://maps.apple.com/maps?q=" + encodeURIComponent(addr)
-      utils.openUrl("maps:q=" + encodeURIComponent(addr));
+      utils.openUrl("maps:q=" + (options.address? encodeURIComponent(addr) : addr));
       resolve();
     });
   }

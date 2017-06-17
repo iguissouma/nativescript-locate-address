@@ -5,6 +5,8 @@
       <Button text="is maps app available?" tap="{{ doCheckAvailable }}" class="button button-a"/>
       <Button text="go to address" tap="{{ doAddress }}" class="button" />
       <Label text="{{ address }}" textWrap="true"/>
+      <Button text="go to Lat/Lng" tap="{{ doLatLng }}" class="button" />
+      <Label text="{{ lat + '/' + lng}}" textWrap="true"/>
     </StackLayout>
   </ScrollView>
 </Page>
