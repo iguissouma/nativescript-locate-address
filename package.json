@@ -1,6 +1,6 @@
 {
   "name": "nativescript-locate-address",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Opening Native Mapping App from your Mobile {N} App to locate address.",
   "main": "locate-address",
   "typings": "index.d.ts",
