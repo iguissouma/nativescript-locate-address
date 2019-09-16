@@ -1,5 +1,5 @@
 import {AddressOptions} from "./locate-address.common";
-import * as utils from "utils/utils";
+import * as utils from "tns-core-modules/utils/utils";
 
 export class LocateAddress {
 

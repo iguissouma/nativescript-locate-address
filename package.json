@@ -1,6 +1,6 @@
 {
   "name": "nativescript-locate-address",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Opening Native Mapping App from your Mobile {N} App to locate address.",
   "main": "locate-address",
   "typings": "index.d.ts",
@@ -11,7 +11,7 @@
     }
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -skipLibCheck",
     "demo.ios.device": "npm run preparedemo && cd demo && tns emulate ios --device \"iPhone 7\"",
     "demo.ios": "npm run preparedemo && cd demo && tns run ios",
     "demo.android": "npm run preparedemo && cd demo && tns run android",
@@ -44,8 +44,8 @@
   "readmeFilename": "README.md",
   "devDependencies": {
     "nativescript-dev-typescript": "^0.3.2",
-    "tns-core-modules": "^2.3.0",
-    "tns-platform-declarations": "^2.3.0",
-    "typescript": "^1.8.10"
+    "tns-core-modules": "~6.0.1",
+    "tns-platform-declarations": "~6.0.1",
+    "typescript": "~3.4.5"
   }
 }

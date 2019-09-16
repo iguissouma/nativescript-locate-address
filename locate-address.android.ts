@@ -1,5 +1,5 @@
 import { AddressOptions } from "./locate-address.common";
-import * as application from "application";
+import * as application from "tns-core-modules/application";
 
 // ignore TS error
 let com:any;
@@ -48,7 +48,7 @@ export class LocateAddress {
                 android.content.Intent.ACTION_VIEW,
                 android.net.Uri.parse(url));
 
-            application.android.currentContext.startActivityForResult(intent, 0);
+            (application.android.foregroundActivity || application.android.startActivity).startActivityForResult(intent, 0);
 
             resolve();
         });
